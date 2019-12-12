@@ -30,13 +30,13 @@
                   <li><a href="#">Media</a></li>
                 <!--MENU PARA NIVEL 2-->
                 <?php elseif($this->session->userdata('level')==='2'):?>
-                  <li class="active"><a href="#">Dashboard</a></li>
+                  <li class="active"><a href="<?php echo base_url();?>page/staff">Dashboard</a></li>
                   <li><a href="#">Pages</a></li>
                   <li><a href="#">Media</a></li>
                 <!--MENU PARA NIVEL 3-->
                 <?php else:?>
-                  <li class="active"><a href="#">Dashboard</a></li>
-                  <li><a href="#">Posts</a></li>
+                  <li class="active"><a href="<?php echo base_url();?>page/author">Dashboard</a></li>
+                  <li><a href="#">Posts de autores</a></li>
                 <?php endif;?>
               </ul>
               <ul class="nav navbar-nav navbar-right">

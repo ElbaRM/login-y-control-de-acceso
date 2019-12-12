@@ -12,7 +12,7 @@ class Page extends CI_Controller {
       if ($this->session->userdata('level')==='1') {
           $this->load->view('dashboard_view');
       } else {
-          echo "Access Denied";
+          echo "Acceso denegado. Solo para usuario de Nivel 1";
       }
  
   }
@@ -27,7 +27,7 @@ class Page extends CI_Controller {
     if($this->session->userdata('level')==='2'){
       $this->load->view('dashboard_view');
     } else {
-        echo "Access Denied";
+        echo "Acceso denegado. Solo para usuario de Nivel 2";
     }
   }
  
@@ -36,7 +36,7 @@ class Page extends CI_Controller {
     if ($this->session->userdata('level')==='3') {
       $this->load->view('dashboard_view');
     } else {
-        echo "Access Denied";
+        echo "Acceso denegado. Solo para usuario de Nivel 3";
     }
   }
  
