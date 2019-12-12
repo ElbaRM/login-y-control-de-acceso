@@ -14,7 +14,7 @@ class Login extends CI_Controller {
     // Coger el email del input del formulario de login
     $email    = $this->input->post('email',TRUE);
     // Coger la contraseña del input del formulario de login
-    $password = md5($this->input->post('password',TRUE));
+    $password = sha1($this->input->post('password',TRUE));
     // Validar que sea correcto
     $validate = $this->login_model->validate($email,$password);
 
