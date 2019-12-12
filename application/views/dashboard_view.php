@@ -22,18 +22,19 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <!--MENU PARA NIVEL 1-->
+                <!-- MENU PARA NIVEL 1 -->
                 <?php if($this->session->userdata('level')==='1'):?>
                   <li class="active"><a href="<?php echo base_url();?>page/index">Dashboard 1</a></li>
+                  <!-- Link a la función posts dentro del controller Page.php -->
                   <li><a href="<?php echo base_url();?>page/posts">Posts</a></li>
                   <li><a href="#">Pages</a></li>
                   <li><a href="#">Media</a></li>
-                <!--MENU PARA NIVEL 2-->
+                <!-- MENU PARA NIVEL 2 -->
                 <?php elseif($this->session->userdata('level')==='2'):?>
                   <li class="active"><a href="<?php echo base_url();?>page/staff">Dashboard Staff</a></li>
                   <li><a href="#">Pages</a></li>
                   <li><a href="#">Media</a></li>
-                <!--MENU PARA NIVEL 3-->
+                <!-- MENU PARA NIVEL 3 -->
                 <?php else:?>
                   <li class="active"><a href="<?php echo base_url();?>page/author">Dashboard Author</a></li>
                   <li><a href="#">Posts de autores</a></li>
