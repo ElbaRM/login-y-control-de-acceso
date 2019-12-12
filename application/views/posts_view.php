@@ -7,7 +7,7 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   </head>
   <body>
-    
+
     <!-- Cargar dashboard_view -->
     <?php
       $this->load->view('dashboard_view');
@@ -19,6 +19,8 @@
       <?php if($this->session->userdata('level')==='1'):?>
         <h1>¡¡Hola!!</h1>
         <p>Puedes acceder al contenido</p>
+        <p>CONTENIDO...</p>
+        <p>CONTENIDO...</p>
       <!-- Si no, muestra el mensaje "Acceso denegado" -->
       <?php else:?>
         <h1>Acceso denegado. Necesitas un usuario de Nivel 1</h1>
